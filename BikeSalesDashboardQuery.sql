@@ -1,4 +1,4 @@
---Joining tables for querying
+--Joining tables and querying releveant fields
 SELECT 
 	ord.order_id,
 	CONCAT(cus.first_name,' ', cus.last_name) AS 'customer',
