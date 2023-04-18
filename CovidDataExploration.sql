@@ -9,8 +9,6 @@ SELECT
 FROM PortfolioProjectCovid..CovidDeaths
 ORDER BY 1,2
 
-
---Total cases vs total deaths
 --Percentage of covid cases that result in death
 SELECT 
 	location,
@@ -23,7 +21,6 @@ WHERE location LIKE '%states%'
 ORDER BY 1,2
 
 --Looking at total cases vs population
-
 SELECT 
 	location,
 	date,
@@ -64,7 +61,6 @@ ORDER BY total_death_count DESC
 
 
 --global
-
 SELECT 
 	date,
 	SUM(new_cases) AS total_cases,
